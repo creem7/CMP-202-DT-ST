@@ -1,0 +1,13 @@
+Algorithmic Documentation
+The program shifts each element of an array to the left by a specified number of rotations. For example, given an array `{1, 2, 3, 4, 5}` and `2` rotations, the output should be `{3, 4, 5, 1, 2}`.
+Function: `rotLeft`and the function parameters are as follows:
+  int[] a: Input array of integers.
+  int d: Number of left rotations.
+These are the steps:
+  1. Determine the length of the array n.
+  2. Create a new array result to store the rotated values.
+  3. Calculate new positions for each element using (i + n - d) % n.
+  4. Assign the values to the result array.
+  5. Print the result array as space-separated integers.
+The initial errors we made were that the original implementation had complex conditions and didn't handle rotation logic properly and also we incorrectly used the indices which led to out-of-bounds errors and wrong assignments.
+Lastly, We consulted AI sources to understand better array manipulation and simplify the function. The AI provided a clear, efficient approach using basic loops and array operations. This helped in correcting and streamlining the implementation.
